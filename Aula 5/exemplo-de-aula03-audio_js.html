@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTMl</title>
+</head>
+<body>
+    <h1>Áudio em HTMl</h1>
+
+    <p>Clique no botão de reprodução para ouvir o som da natureza</p>
+
+    <audio id =meuAudio controls loop>
+        <source
+            src ="ronaldo.mp3"
+            type="audio/mpeg"
+        />
+        Seu Navegador não suporte a reprodução de áudio.
+    </audio>
+
+    <script>
+        const audio = document.getElementById("meuAudio")
+        audio.volume = 0.5;
+
+    </script>
+</body>
+</html>
