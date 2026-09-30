@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal {
+    width: 80%;
+    margin: 30px auto;
+    background: antiquewhite;
+    border: 1px solid whitesmoke;
+
+}
+
+#topo_geral{
+    background-color: bisque;
+    color: black;
+    padding: 25px;
+    text-align: center;
+    
+}
