@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #f3f1f1;
+    color: #686b6b;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+
+.layout-pagina {
+    display: grid;
+
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+
+}
+
+/*Cabeçalho*/
+
+.cabecalho {
+    grid-area: header;
+
+    background-color: #383b3f;
+
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1{
+    margin: 0 0 10px;
+}
+
+.cabecalho p{
+    margin: 0;
+}
+
+/*Menu da Lateral Esquerda*/
+
+.barra-lateral {
+    grid-area: sidebar;
+
+    background-color: #4e4e50;
+    padding: 20px;
+}
+
+.barra-lateral h2{
+    color: rgb(241, 241, 241);
+}
+
+.barra-lateral ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li{
+    margin-bottom: 20px;
+}
+
+.barra-lateral a{
+    display: block;
+    background-color: #0c0c0c;
+    color: rgb(148, 181, 211);
+    padding: 13px;
+    border: 5px;
+    text-decoration: none;
+}
+
+.barra-lateral a:hover{
+    background-color: cyan;
+}
+
+/* Grid dos Cards*/
+
+.grid-principal {
+    grid-area: main;
+    padding: 30px;
+}
+
+.grid-principal h2{
+    margin-top: 0;
+    color: rgb(7, 72, 88);
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 10px;
+}
+
+.card{
+    background-color: white;
+    padding: 1rem;
+    border: 1px soiid #0c0c0c;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px #242a41;
+}
+
+.card:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.card h3{
+    margin-top: 0;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+.card p{
+    line-height: 1.5;
+}
+
+.card a{
+    display: block;
+    color: rgb(66, 116, 163);
+    padding: 13px;
+    border: 5px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.rodape{
+    grid-area: footer;
+
+    background-color: #1f1d1d;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+
+}
