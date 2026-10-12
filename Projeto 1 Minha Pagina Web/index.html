@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KakaDev – Minha Identidade na Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Kauan Zaparoli</h1>
+    <p class="subtitulo">Conhecido como <strong>KakaDev</strong> · Estudante de Ciência da Computação</p>
+    <p class="localizacao">Universidade Cruzeiro do Sul · São Paulo, Zona Leste</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#interesses">Interesses</a></li>
+      <li><a href="#aprendizado">Aprendizado</a></li>
+      <li><a href="#midia">Mídia</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- SEÇÃO: SOBRE MIM -->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+
+      <!-- Substitua "foto.jpg" pela sua foto real ou remova a tag se não quiser usar foto -->
+      <img
+        src="foto.jpg"
+        alt="Foto de Kauan Zaparoli, o KakaDev, estudante de Ciência da Computação"
+        width="180"
+        height="180"
+        class="foto-perfil"
+        onerror="this.style.display='none'"
+      />
+
+      <p>
+        Olá! Sou <strong>Kauan Zaparoli</strong>, também conhecido como
+        <strong>KakaDev</strong>. Tenho paixão por tecnologia, música e jogos,
+        e estou no início da minha jornada na área de computação.
+      </p>
+      <p>
+        Meu objetivo é aprender um pouco de tudo e me aprofundar nas áreas que
+        mais me atraem: <strong>redes</strong> e <strong>programação</strong>.
+        Cada linha de código é um passo nessa direção.
+      </p>
+    </section>
+
+    <!-- SEÇÃO: INTERESSES -->
+    <section id="interesses">
+      <h2>Meus Interesses</h2>
+      <ul>
+        <li>🎮 <strong>Valorant</strong> – Adoro o universo competitivo e a estratégia por trás das partidas</li>
+        <li>🖥️ <strong>Hardware e Redes</strong> – Fascinado por como as máquinas e infraestruturas funcionam</li>
+        <li>🎸 <strong>Música</strong> – Sou músico nas horas vagas e a música faz parte da minha identidade</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO: APRENDIZADO (tabela) -->
+    <section id="aprendizado">
+      <h2>O que estou aprendendo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologia</th>
+            <th>Categoria</th>
+            <th>Nível atual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Linguagem de Programação</td>
+            <td>Iniciante</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Linguagem de Programação</td>
+            <td>Iniciante</td>
+          </tr>
+          <tr>
+            <td>HTML5 e CSS</td>
+            <td>Desenvolvimento Front-End</td>
+            <td>Básico</td>
+          </tr>
+          <tr>
+            <td>MySQL</td>
+            <td>Banco de Dados</td>
+            <td>Iniciante</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SEÇÃO: MÍDIA (vídeo com controles) -->
+    <section id="midia">
+      <h2>Conteúdo que recomendo</h2>
+      <p>Um vídeo do canal <strong>Souza Dev</strong> que eu recomendo para quem está começando:</p>
+
+      <!--
+        iframe do YouTube tem controles nativos de reprodução.
+        Se o professor exigir uma tag <video> com arquivo local,
+        substitua este bloco por:
+        <video src="video.mp4" controls width="560">Seu navegador não suporta vídeo.</video>
+      -->
+      <div class="video-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/watch?v=P-NC_JUn6mc"
+          title="Vídeo do canal Souza Dev – recomendação do KakaDev"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p>
+        Acesse o canal diretamente:
+        <a href="https://www.youtube.com/watch?v=P-NC_JUn6mc" target="_blank" rel="noopener noreferrer">
+          Souza Dev no YouTube
+        </a>
+      </p>
+    </section>
+
+    <!-- SEÇÃO: LINKS EXTERNOS -->
+    <section id="links">
+      <h2>Me encontre na web</h2>
+      <ul>
+        <li>
+          🐙 <a href="https://github.com/DevZaparoli" target="_blank" rel="noopener noreferrer">
+            GitHub – DevZaparoli
+          </a>
+        </li>
+        <li>
+          💼 <a href="https://www.linkedin.com/in/kauan-araujo-dev" target="_blank" rel="noopener noreferrer">
+            LinkedIn – Kauan Araújo
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kauan Zaparoli · KakaDev · São Paulo, Zona Leste</p>
+    <p><a href="contato.html">Ir para a página de contato →</a></p>
+  </footer>
+
+</body>
+</html>
